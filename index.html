@@ -13,7 +13,29 @@
 
     <tr>
         <td style="height:100px;width:100px; text-align: center; font-size:16px;">
-            got tools and techniques you need to build your API test fortress
+<h3>A quick rundown of the issue I'm trying to solve:</h3>
+
+<p>Before I go into detail about what this tool is, how it works, how to use it, and its benefits, you should be aware of the challenge I'm now facing as a test automation engineer.</p>
+
+<p>As a test automation engineer, I strive to automate as many test cases as possible in order to reach 100% regression suite automation. In fact, I came close to accomplishing this in one of my earlier projects; the only test flow I couldn't automate was the one with captcha enabled (since it isn't supposed to be disabled because of project constraints).</p>
+
+<p>As you can see, I justified my role as an automation tester on that project; my tests are fully automated, and from a management standpoint, testing must be completed quickly, and we must be able to tell whether the most recent code version that was deployed into the test environment is ready to go to production or not.</p>
+
+<p>The expectation and plan are simple here: with all those test automation suites, I was able to complete the testing and obtain the test results, and here's the twist: larger test suites result in larger test results; no biggie if all tests pass; if there are test failures, then the real work begins.</p>
+
+<p>The task is simple, but time consuming: I must go through all of the failed tests and determine the root cause for each failure. After all of this time consuming work, we may discover that the root cause for all of these failures is one, two, or a few common ones., e.g., one common issue can cause ten tests to fail, or in some cases, if the issue is with a critical component such as login, it will be the root cause for all failures.</p>
+
+<p>The problem doesn't end there; if a tester has worked on a project for a long time, he will debug the report quickly and arrive at a conclusion based on their knowledge of the defect's circumstances, like whether the defect is already in production, whether the defect has been reported and is awaiting fix, or whether the defect has been deferred or even rejected. However, if the same report is debugged by a tester who recently joined the team, the whole story changes because they are unaware of any of the reasons I outlined before, hence they will take longer to debug the same report.</p>
+
+<h3>So, as you can see, these are sore spots that I'd like to address:</h3>
+<p>Time spent on consolidating test failures</p>
+<p>Time spent determining the details surrounding a failure</p>
+<p>Procedures followed by prior testers to resolve the failure are either missing or scattered</p>
+
+<h3>Solution is, I created a test report that fit my needs:</h3>
+<p>Consolidate all of the test cases that failed due to common failure</p>
+<p>Explains the circumstances of a failure and is crucial in signing-off a code</p>
+<p>Organise all prior testers' intel about a failure in one place and list them out as a reference if the same failure happens again</p>
         </td>
     </tr>
 </table>
